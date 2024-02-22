@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header styling */
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px;
+    border:4px solid black;
+    background-color: rgba(95, 158, 160, 0.329);
+}
+.myname{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.myname img{
+    width:140px;
+    margin:10px 25px;
+    border-radius: 18px;
+}
+.myname span{
+    font-weight:bolder;
+    font-size: 40px;
+    margin-left: 34px;
+}
+.about a{
+    text-decoration: none;
+    margin-right: 44px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+.about a:hover{
+    background-color: blue;
+    border-radius: 8px;
+}
+/*hero styling */
+#hero{
+    height:300px;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIF.o%2fEH1%2fIVTLLeNEl2nNdP0A&pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero1-dev h1{
+   color:white;
+   margin-left: 50px;
+   padding: 30px;
+}
+.hero2-desc h2{
+    color:white;
+    font-style: oblique;
+    margin-left: 90px;
+    padding: 10px;
+}
+.hero3{
+    border: 1px solid black;
+    width:500px;
+    margin-left: 110px;
+    padding: 18px;
+}
+.hero3 span{
+    color:white;
+
+}
+#skills{
+    background-color: rgba(128, 128, 128, 0.548);
+    height:100px;
+    margin-top: 2rem;
+}
+#skills h2{
+    margin-left: 540px;
+    padding: 20px;
+    color: brown;
+}
+#skills ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.5px;
+    cursor: pointer;
+    color: blue;
+}
+#projects{
+    display: flex;
+    background-color: rgba(95, 158, 160, 0.616);
+    margin-top: 2rem;
+    height:300px;
+}
+.project-img img{
+    margin-right: 50px;
+    width:28rem;
+    margin:20px;
+    border-radius: 50px;
+}
+.brief-project h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.brief-project h3{
+    margin: 2rem;
+    color:darkmagenta;
+}
+/*cards section */
+#cards-section{
+    background-color:rgba(128, 128, 128, 0.26);
+    margin-top: 2rem;
+}
+.writing-card{
+    margin-top: 2rem;
+}
+.writing1 h1{
+    text-align: center;
+    padding: 20px;
+}
+.writing2 p{
+    text-align: center;
+    padding: 4px;
+}
+.grid-card{
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    padding: 40px 190px;
+}
+.grid1{
+    background-color: darkcyan;
+    height:200px;
+    width:400px;
+}
+.img1 img{
+    width: 80px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 170px;
+}
+.card-heading{
+    margin-left: 100px;
+    margin-bottom: 1rem;
+}
+
+.img-para{
+   /* padding:1rem;*/
+   text-align: center;
+}
+.grid2{
+    background-color:darkcyan;
+    height:200px;
+    width:400px;
+}
+.grid3{
+    background-color: darkcyan;
+    height:200px;
+    width:400px;
+}
+.grid4{
+    background-color: darkcyan;
+    height:200px;
+    width:400px;
+}
+.grid5{
+    background-color: darkcyan;
+    height:200px;
+    width:400px;
+}
+.grid6{
+    background-color: darkcyan;
+    height:200px;
+    width:400px;
+}
+#hero-button h1{
+    text-align: center;
+    margin-top: 18px;
+}
+.companies{
+    width:780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    border:4px solid black;
+    padding: 24px;
+    margin-left: 259px;
+}
+.companies i,a{
+    margin-right: 29px;
+    text-decoration:underline;
+    color: black;
+}
+.companies:hover{
+    background-color: rgba(165, 42, 42, 0.562);
+}
+
+/* to make responsive we should add "media" query */
+
+/* Add a media query for screens with a maximum width of 600px */
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column; /* Arrange header items vertically */
+        text-align: center; /* Center align header items */
+    }
+    .myname {
+        margin-bottom: 10px; /* Add some space between the image and name */
+    }
+    .myname img {
+        width: 100px; /* Decrease image width */
+        margin: 10px 0; /* Adjust image margin */
+    }
+    .about {
+        flex-direction: column; /* Arrange navigation links vertically */
+        margin-right: 0; /* Remove right margin */
+    }
+    .about a {
+        margin: 10px 0; /* Add space between navigation links */
+    }
+    #hero {
+        height: auto; /* Adjust height to fit content */
+        padding-top: 50px; /* Add space at the top */
+        background-size: contain; /* Ensure background image fits container */
+        text-align: center; /* Center align text */
+    }
+    .hero1-dev h1,
+    .hero2-desc h2,
+    .hero3 span {
+        margin: 10px 0; /* Adjust margins */
+        padding: 10px; /* Adjust padding */
+    }
+    #skills h2 {
+        margin-left: 0; /* Reset left margin */
+        text-align: center; /* Center align heading */
+    }
+    #skills ul {
+        flex-direction: column; /* Arrange skills list vertically */
+        text-align: center; /* Center align list items */
+    }
+    #projects {
+        flex-direction: column; /* Arrange project section vertically */
+        align-items: center; /* Center align items */
+    }
+    .project-img img {
+        width: 80%; /* Adjust image width */
+        margin: 20px 0; /* Adjust margin */
+        border-radius: 0; /* Remove border radius */
+    }
+    .brief-project h1,
+    .brief-project h3 {
+        text-align: center; /* Center align headings */
+    }
+    #cards-section {
+        padding: 20px; /* Adjust padding */
+    }
+    .grid-card {
+        display: grid;
+        grid-template-columns: reapeat(1,1fr); /* Change to single column layout */
+        padding: 20px; /* Adjust padding */
+    }
+    .companies {
+        flex-direction: column; /* Arrange company links vertically */
+        align-items: center; /* Center align items */
+        margin: 20px auto; /* Center and add margin */
+        width: 100%; /* Set width to full */
+    }
+}
